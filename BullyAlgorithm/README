@@ -1,0 +1,13 @@
+@author Valentine Chiwome
+
+This code implements the bully algorithm for selecting a leader.
+To run it, run ProcessA, ProcessB and ProcessC concurrently.
+The processes have identifiers 0, 5 and 10 respectively. They
+also use ports 2014, 2015 and 2016 respectively. You will see 
+the output in the console that identifies a coordinator as
+well as the election process for that coordinator. 
+
+After, ProcessC, the one with the largest identifier(10) has 
+been chosen, kill it and see that ProcessB with identifier 5 
+will be chosen as new coordinator. Booting ProcessC again
+will see it being elected as the new leader.
